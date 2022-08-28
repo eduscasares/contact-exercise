@@ -5,8 +5,6 @@ import { Contact } from '../../models/Contact.class';
 
 const ContactComponent = ({ contact, remove, ask }) => {
 
-
-
     /**
      * @returns if user is connected or not 
      */
@@ -19,24 +17,17 @@ const ContactComponent = ({ contact, remove, ask }) => {
     }
 
     
-
-
     return (
         <div className='contact-item'>
             <div className="contact">
-                <p> { contact.name } { contact.surname} </p>
+                <p> { contact.name } { contact.surname } </p>
                 <p> { contact.email } </p>
             </div>
                 { isConnected() }
-            
-            {/* <i 
-                className='bi bi-trash-fill'
-                onClick={ () => remove(contact) } >
-            </i> */}
 
             <i 
                 className='bi bi-trash-fill'
-                onClick={ () => ask(contact)}></i>
+                onClick={ () => ask(contact) }></i>
         </div>
     );
 };

@@ -14,11 +14,14 @@ const ModalDelete = ( { contact, remove } ) => {
             <div className="group-buttons">
                 <i className="bi bi-check2" onClick={ () => {
                     remove(contact);
-                    document.querySelector('.modal-deletion').classList.remove('active') } }>
+                    document.querySelector('.modal-deletion').classList.remove('active')
+                    document.querySelector('.App').classList.remove('modalOn'); } }>
 
                 </i>
-                <i className="bi bi-x-lg" onClick={ () => 
-                    document.querySelector('.modal-deletion').classList.remove('active') }></i>
+                <i className="bi bi-x-lg" onClick={ () => {
+                    document.querySelector('.modal-deletion').classList.remove('active');
+                    document.querySelector('.App').classList.remove('modalOn');
+                } }></i>
             </div>
         </div>
     );
