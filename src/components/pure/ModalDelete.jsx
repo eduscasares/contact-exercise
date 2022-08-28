@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 import '../../styles/modal-deletion.scss'
 
 
-const ModalDelete = ( { remove, contact } ) => {
+const ModalDelete = ( { contact, remove } ) => {
+
     return (
         <div className='modal-deletion'>
+
             <p>¿Estás seguro que quieres borrar el contacto?</p>
 
             <div className="group-buttons">
@@ -20,13 +22,13 @@ const ModalDelete = ( { remove, contact } ) => {
             </div>
         </div>
     );
+
 };
 
 
 ModalDelete.propTypes = {
     contact: PropTypes.instanceOf(Contact),
-
-};
+}; 
 
 
 export default ModalDelete;

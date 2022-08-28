@@ -4,7 +4,7 @@ export class Contact {
     email = '';
     connected = false;
 
-    constructor(name, surname, email, connected) {
+    constructor(name, surname, email, connected = false) {
         this.name = name;
         this.surname = surname;
         this.email = email;
