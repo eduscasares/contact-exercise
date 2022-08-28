@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; 
-import { Contact } from '../../models/Contact.class';
+// import { Contact } from '../../models/Contact.class';
 import ContactComponent from '../pure/Contact';
 import '../../styles/contact.scss'
 import logo from '../../logo.svg';
@@ -13,16 +13,16 @@ const ContactList = () => {
     /**
      * Creating default list of contact
      */
-    const defaultContact = new Contact( 'John', 'Doe1', 'itsme@johndoe.es', false );
-    const defaultContact1 = new Contact( 'John', 'Doe2', 'itsme@johndoe.es', true );
-    const defaultContact2 = new Contact( 'John', 'Doe3', 'itsme@johndoe.es', true );
-    const defaultContact3 = new Contact( 'John', 'Doe4', 'itsme@johndoe.es', false );
+    // const defaultContact = new Contact( 'John', 'Doe1', 'itsme@johndoe.es', false );
+    // const defaultContact1 = new Contact( 'John', 'Doe2', 'itsme@johndoe.es', true );
+    // const defaultContact2 = new Contact( 'John', 'Doe3', 'itsme@johndoe.es', true );
+    // const defaultContact3 = new Contact( 'John', 'Doe4', 'itsme@johndoe.es', false );
 
 
     /**
      * Setting the state of component
      */
-    const [connection, setConnection] = useState([ defaultContact, defaultContact1, defaultContact2, defaultContact3]);
+    const [connection, setConnection] = useState([]);
 
 
 
